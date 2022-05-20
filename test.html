@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="search">
+      <label for="">News</label>
+      <input type="text" class="input" />
+      <input type="submit" />
+    </form>
+    <div class="container">
+      <ul class="class-list"></ul>
+    </div>
+  </body>
+  <script>
+    const searchForm = document.querySelector(".search");
+    const input = document.querySelector(".input");
+    const newsList = document.querySelector(".class-list");
+
+    searchForm.addEventListener("submit", retrieve);
+    function retrieve(e) {
+      e.preventDefault();
+      // let topic = input.value;
+      const apiKey = "d2268c73704c4d0cb5ad7aab68d05826";
+      let newsUrl = `https://newsapi.org/v2/everything?domains=${topic}&apiKey=${apiKey}`;
+
+      fetch(newsUrl)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+        });
+    }
+  </script>
+</html>

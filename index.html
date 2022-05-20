@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -19,9 +19,9 @@
 
         <div class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><a href="./intro.html">Giới thiệu</a></li>
+                <!-- <li class="header__item"><a href="./intro.html">Giới thiệu</a></li> -->
                 <li class="header__item"><a href="./phanvung.html">Phân vùng rủi ro thiên tai</a></li>
-                <li class="header__item"><a href="./kttv.html">Kiến thức KTTV</a></li>
+                <!-- <li class="header__item"><a href="./kttv.html">Kiến thức KTTV</a></li> -->
             </ul>
 
             <div class="header__user header__item">
@@ -40,9 +40,11 @@
 
             <div class="main__header">
                 <video autoplay muted loop id="myVideo">
-                    <source src="./images/29002959_heavy-dark-cloudy-sky-with-fluffy-clouds-natural-sky-background-weather-forecast-concept_by_grigory_bruev_preview.mp4" type="video/mp4">
+                    <source id="mp4_src" src="/images/29002959_heavy-dark-cloudy-sky-with-fluffy-clouds-natural-sky-background-weather-forecast-concept_by_grigory_bruev_preview.mp4" type="video/mp4">
+                    <source id="ogg_src" src="/images/nang.mp4" type="video/ogg">
                     Your browser does not support HTML5 video.
                 </video>
+                
                 <div class="main-header__content">
                    <h3 class="location"></h3>
                    <h1><span class="temp"></span><sup>o</sup>C</h1>
@@ -89,23 +91,23 @@
 
         <div class="sidebar">
             <div class="sidebar__item">
-                <img src="./images/slide1.jpg" alt="">
-                <p>FPT Shop tiếp tục tặng ưu đãi đến 6 triệu đồng cho khách hàng đặt trước Galaxy S22 Series</p>
+                <img src="./images/bao-1.jpg" alt="">
+                <p>Biển Đông nguy cơ sắp hứng 2 cơn bão và 1 áp thấp nhiệt đới bất thường, nguy cơ ngập lụt cao ở các tỉnh, thành phố.</p>
             </div>
 
             <div class="sidebar__item">
-                <img src="./images/slide2.jpg" alt="">
-                <p>Galaxy S22 Ultra phá đảo, giá từ 29,990,000đ - ‘Vị vua’ mới của Android</p>
+                <img src="./images/bao3-1.jpg" alt="">
+                <p>Cơn bão đầu tiên năm 2022 xuất hiện ở “ổ bão” dữ dội nhất hành tinh, nguy cơ gây thiệt hại về người và của cao.</p>
             </div>
 
             <div class="sidebar__item">
-                <img src="./images/slide3.jpg" alt="">
-                <p>Quỹ Vinfuture chính thức mở cổng nhận đề cử mùa giải 2022</p>
+                <img src="./images/dongset-1.jpg" alt="">
+                <p>Sấm sét xuất hiện ở nhiều nơi với cường độ liên tục, đề nghị người dân ra đường cẩn thận để tránh hậu quả bị sét đánh.</p>
             </div>
 
             <div class="sidebar__item">
-                <img src="./images/slide4.jpg" alt="">
-                <p>Tập đoàn Giáo dục quốc tế Nam Việt vững vàng phát triển sau đại dịch</p>
+                <img src="https://cdn.24h.com.vn/upload/4-2021/images/2021-12-18/medium/1639803982-105-thumbnail-width640height480.jpg" alt="">
+                <p>Bão Rai gió giật cấp 17 chính thức vào Biển Đông, hướng thẳng miền Trung</p>
             </div>
         </div>
     </div>
@@ -162,5 +164,6 @@
     <div class="error-screen">
         <h1>Screen not support. <br> Please, open your desktop.</h1>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
