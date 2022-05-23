@@ -50,7 +50,6 @@ const wind = document.querySelector(".wind");
 const sea = document.querySelector(".sea");
 const videos = document.querySelector("#myVideo");
 const mainHeader = document.querySelector(".main__header");
-const source = document.get;
 function changeWeather(weather) {
   locations.forEach((location) => {
     location.textContent = weather.name + " " + weather.sys.country;

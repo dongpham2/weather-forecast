@@ -9,6 +9,7 @@ p,
 a,
 input {
   font-size: 16px;
+  text-decoration: none;
 }
 i {
   font-size: 24px;
@@ -75,7 +76,7 @@ body {
 .header__item:hover,
 .header__item:hover a {
   cursor: pointer;
-  color: rgb(108, 225, 45);
+  color: #19aadb;
 }
 .header__user {
   padding: 9px;
@@ -134,13 +135,21 @@ body {
 }
 
 .sidebar__item-end {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
+  color: black;
 }
 .sidebar__item-time {
   font-style: 10px;
   font-weight: 500;
+}
+.sidebar__item-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  color: black;
 }
 /* footer CSS */
 .footer {
@@ -173,7 +182,15 @@ body {
   text-decoration: none;
   color: #0c2738;
 }
-
+.sidebar__item-title h2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  color: #19aadb;
+}
 /* modal CSS */
 .modal {
   width: 100%;
